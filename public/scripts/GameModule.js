@@ -34,7 +34,7 @@ class GameModule {
                 speed: 100
             },
             ultra: {
-                minLevel: 12,
+                minLevel: 13,
                 maxLevel: 20,
                 maxBlocks: 1,
                 numberOutsideEdge: 0,
@@ -72,7 +72,6 @@ class GameModule {
         for(let i=0; i<this.componentList.length; i++) {
             let comp = this.componentList[i];
             let position = (comp.position.x - this.gameArea.confines.pos.x) / comp.width;
-            console.log(comp.width, comp.position.x, position, i);
             if (position === 7) {
                 comp.movingLeft = false;
             }
